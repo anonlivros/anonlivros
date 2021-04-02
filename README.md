@@ -2,62 +2,62 @@
 Autor: [t.me/anonlivros](https://t.me/anonlivros)
 
 ### Menu de Navegação
-1-[Introdução](#Introdução)
+1-[Introdução](#introdução)
 
-2-[O segredo do enquadramento perfeito](#O-segredo-do-enquadramento-perfeito)
+2-[O segredo do enquadramento perfeito](#o-segredo-do-enquadramento-perfeito)
 
-2.1-[Perspectiva](#Perspectiva)
+2.1-[Perspectiva](#perspectiva)
 
-2.2-[Rotação](#Rotação)
+2.2-[Rotação](#rotação)
 
-3-[Tirar Fotos-Modo Páginas Contínuas](#Tirar-Fotos-Modo-Páginas-Contínuas)
+3-[Tirar Fotos-Modo Páginas Contínuas](#tirar-fotos-modo-páginas-contínuas)
 
-4-[Tirar Fotos-Modo Duplex](#Tirar-Fotos-Modo-Duplex)
+4-[Tirar Fotos-Modo Duplex](#tirar-fotos-modo-duplex)
 
-4.1-[Acelerando as fotografias](#Acelerando-as-fotografias)
+4.1-[Acelerando as fotografias](#acelerando-as-fotografias)
 
-4.1.1-[Disparo por sinal sonoro](#Disparo-por-sinal-sonoro)
+4.1.1-[Disparo por sinal sonoro](#disparo-por-sinal-sonoro)
 
-4.1.2-[Disparo com timer automático](#Disparo-com-timer-automático)
+4.1.2-[Disparo com timer automático](#disparo-com-timer-automático)
 
-4.1.2.1-[Configurando o timer](#Configurando-o-timer)
+4.1.2.1-[Configurando o timer](#configurando-o-timer)
 
-4.2-[Dica para aumentar a qualidade final](#Dica-para-aumentar-a-qualidade-final)
+4.2-[Dica para aumentar a qualidade final](#dica-para-aumentar-a-qualidade-final)
 
-4.2.1-[Minimizar distorção das páginas](#Minimizar-distorção-das-páginas)
+4.2.1-[Minimizar distorção das páginas](#minimizar-distorção-das-páginas)
 
-5-[Tratamento das fotos](#Tratamento-das-fotos)
+5-[Tratamento das fotos](#tratamento-das-fotos)
 
-5.1-[Modo em lotes de páginas contínuas](#Modo-em-lotes-de-páginas-contínuas)
+5.1-[Modo em lotes de páginas contínuas](#modo-em-lotes-de-páginas-contínuas)
 
-5.2-[Modo em lotes separados em Par / Ímpar (duplex scanning)](#modo-em-lotes-separados-em-par--%C3%ADmpar-duplex-scanning)
+5.2-[Modo em lotes separados em Par / Ímpar (duplex scanning)](#modo-em-lotes-separados-em-par--%c3%admpar-duplex-scanning)
 
-5.2.1-[Corrigir rotação do lote de páginas Ímpar e Par com software externo](#Corrigir-rotação-do-lote-de-páginas-Ímpar-e-Par-com-software-externo)
+5.2.1-[Corrigir rotação do lote de páginas Ímpar e Par com software externo](#corrigir-rotação-do-lote-de-páginas-ímpar-e-par-com-software-externo)
 
-5.3-[Edição final](#Edição-final)
+5.3-[Edição final](#edição-final)
 
-5.3.1-[Tutorial em vídeo](#Tutorial-em-vídeo)
+5.3.1-[Tutorial em vídeo](#tutorial-em-vídeo)
 
-5.3.2-[Download-Software Profissional](#Download-Software-Profissional)
+5.3.2-[Download-Software Profissional](#download-software-profissional)
 
-5.3.3-[Importação](#Importação)
+5.3.3-[Importação](#importação)
 
-5.3.3.1-[Delimitação do tamanho da task](#Delimitação-do-tamanho-da-task)
+5.3.3.1-[Delimitação do tamanho da task](#delimitação-do-tamanho-da-task)
 
-5.3.4-[Edição das fotos](#Edição-das-fotos)
+5.3.4-[Edição das fotos](#edição-das-fotos)
 
-5.3.5-[Definindo a resolução](#definindo-a-resolu%C3%A7%C3%A3o)
+5.3.5-[Definindo a resolução](#definindo-a-resolu%c3%a7%c3%a3o)
 
-5.3.6-[Recuperar a ordem natural das páginas](#Recuperar-a-ordem-natural-das-páginas)
+5.3.6-[Recuperar a ordem natural das páginas](#recuperar-a-ordem-natural-das-páginas)
 
-5.3.7-[Ativar função de pesquisa (OCR)](#ativar-fun%C3%A7%C3%A3o-de-pesquisa-ocr)
+5.3.7-[Ativar função de pesquisa (OCR)](#ativar-fun%c3%a7%c3%a3o-de-pesquisa-ocr)
 
-5.3.8-[Backup, Repetição e Sucesso](#backup-repeti%C3%A7%C3%A3o-e-sucesso)
+5.3.8-[Backup, Repetição e Sucesso](#backup-repeti%c3%a7%c3%a3o-e-sucesso)
 
-6-[Salvar Ebook PDF](#Salvar-Ebook-PDF)
+6-[Salvar Ebook PDF](#salvar-ebook-pdf)
 
 ### Introdução
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Este tutorial ensina a transformar um Livro em Ebook PDF pesquisável.
@@ -107,7 +107,7 @@ Uma fonte de iluminação extra é necessária para evitar que a sombra causada 
 Como fonte de iluminação, pode ser utilizado o LED ligado de um outro celular ou uma [Luminária de Mesa](https://www.google.com/search?q=lumin%C3%A1ria+de+mesa&tbm=isch&).
 
 ### O segredo do enquadramento perfeito
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 O processo de tirar fotos com um celular, ao invés de um aparelho de Scanner, está sujeito a distorções:
@@ -123,7 +123,7 @@ Abaixo será explicado como podemos atingir este nível de qualidade.
 Executar esses passos com cuidado, minimiza drasticamente o tempo necessário na edição das fotos, por reduzir o tempo gasto com configuração para compensar a distorção trapezoidal, como também o tempo gasto com ajuste de rotação das páginas.
 
 #### Perspectiva
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Siga os passos:
@@ -138,7 +138,7 @@ https://play.google.com/store/apps/details?id=com.tksw.tksw.anglemeasurement
 Com esses passos acima, garantimos que as páginas capturadas estejam sem distorção de perspectiva, onde os ângulo internos sejam de exatos 90 graus.
 
 #### Rotação
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Siga os passos:
@@ -152,13 +152,13 @@ Com esses passos acima, garantimos que:
 - As margens verticais e horizontais dos limites da foto em relação ao livro, estejam simétricas.
 
 ### Tirar Fotos-Modo Páginas Contínuas
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 [ em construção ]
 
 ### Tirar Fotos-Modo Duplex
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Para colher as duas vantagens (qualidade e velocidade) simultaneamente, recomenda-se o uso de um suporte fixo para segurar a câmera.
@@ -180,14 +180,14 @@ Naturalmente, as fotografias deste lote ficarão de ponta cabeça e em ordem inv
 É importante lembrar para o uso de uma fonte de iluminação extra, evitando que baixa iluminação ou sombras distorçam a imagem.
 
 #### Acelerando as fotografias
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Para aumentar a velocidade de captura sem precisar tocar no celular para tirar cada foto, existem abordagens distintas que podem ser seguidas.
 Além do ganho de velocidade, essas abordagens aumentam a qualidade das fotos, uma vez que o toque no celular provoca tremores no suporte que podem gerar borrões na foto.
 
 ##### Disparo por sinal sonoro
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Esta abordagem é a mais eficiente. Mas ela só pode ser aplicada em ambientes que não sejam muito barulhentos.
@@ -204,7 +204,7 @@ Em seguida, virar a página do livro e emitir novamente o sinal sonoro para o ce
 A grande vantagem deste método está em o celular respeitar as variações de velocidade na sua capacidade de virar as páginas. Assim haverá uma forte sincronia entre a frequência das fotografias disparadas e seus movimentos manuais. Sem disparo no momento errado e sem tempo perdido com espera.
 
 ##### Disparo com timer automático
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Esta abordagem é menos produtiva que com o Disparo por Sinal Sonoro.
@@ -215,7 +215,7 @@ https://play.google.com/store/apps/details?id=com.augusto.cameratimelapse&hl=pt_
 O app informado possibilita tirar fotos automaticamente a cada 'x' segundos, de forma que o tempo dos intervalos de captura corresponda a sua pessoal velocidade manual de trocar de páginas com segurança, minimizando os erros no processo.
 
 ###### Configurando o timer
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 - Testar o timer de fotografia sequencial configurado para 10 segundos e ir reduzindo conforme a sua perícia em virar páginas com segurança e rapidamente.
@@ -223,7 +223,7 @@ O app informado possibilita tirar fotos automaticamente a cada 'x' segundos, de 
 
 #### Dica para aumentar a qualidade final
 ##### Minimizar distorção das páginas
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Siga os passos:
@@ -235,7 +235,7 @@ Siga os passos:
 
 ## Tratamento das fotos
 ### Modo em lotes de páginas contínuas
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 [ em construção ]
@@ -244,7 +244,7 @@ Siga os passos:
 	- Não é necessário fazer o reordenamento em modo 'duplex scanning'
 
 ### Modo em lotes separados em Par / Ímpar (duplex scanning)
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Este método considera que se tenha um lote de imagens apenas das páginas **ímpar** e outro lote de imagens apenas com páginas **par**.
@@ -259,13 +259,13 @@ Estimativas de Eficiência no tratamento das fotos
 [ em construção ]
 
 ### Edição final
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Utilizaremos o software `Abby FineReader 15 Portable` para fazer a edição final das fotos e produzir o livro em PDF.
 
 #### Tutorial em vídeo
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 [![Tutorial em vídeo](https://i.imgur.com/grL71hw.jpg)](https://youtu.be/8U1QuFpO8WY)
@@ -277,7 +277,7 @@ https://t.me/anonlivros/18
 
 
 #### Importação
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Como o projeto de construção do PDF não será finalizado num único esforço contínuo, a atividade edição final das fotos será quebrada grupos de fotos representadas por Tasks, que facilitará a divisão de trabalho ao longo dos dias e minimizará o risco de se perder durante a organização do processo.
@@ -291,7 +291,7 @@ Siga os passos:
 
 
 ##### Delimitação do tamanho da task
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 A velocidade de tratamento das páginas dependerá da abordagem utilizada, seja prezando por mais qualidade e estética, ou prezando por mais velocidade.
 
@@ -344,7 +344,7 @@ Com tasks de volume Ímpar, a falta de consistência no processo de importação
 > Nota: Imagine a quantidade de acidentes e retrabalhos que o autor deste tutorial sofreu, bagunçando a ordem de 400 páginas e tendo que corrigir aposição individualmente, até o ponto em que entendeu a origem do risco e foi capaz de identificar essa boa prática. #rindo_de_nervoso :p
 
 #### Edição das fotos
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Tal como explicado no tópico acima, a task deve ser composta por um volume de número Par.
@@ -352,7 +352,7 @@ Tal como explicado no tópico acima, a task deve ser composta por um volume de n
 Considerando que as páginas iniciam com o número 1.
 
 ##### Definindo a resolução
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 A resolução do ebook é ajustada de modo que a dimensão padronizada da página se encaixe perfeitamente na imagem dela.
@@ -483,7 +483,7 @@ Após substituição de cores\
 ![](img/hardcrop_2.jpg)
 
 #### Recuperar a ordem natural das páginas
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 Esta etapa só é necessária para fotos importadas separando em lote Ímpar e Par (duplex).
 
@@ -495,7 +495,7 @@ Esta etapa só é necessária para fotos importadas separando em lote Ímpar e P
 	- clicar no botão `Ok`.
 
 #### Ativar função de pesquisa (OCR)
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 Siga os passos:
 - Analisar páginas para distinguir texto de imagens
@@ -514,7 +514,7 @@ Siga os passos:
 
 
 #### Backup, Repetição e Sucesso
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 Durante o uso do app, seu projeto corre alguns riscos
 - Eventualmente o app pode travar, o forçando a fechar e depois notar que ele não abre mais, foi corrompido.
@@ -541,7 +541,7 @@ Ter Backup das últimas 2 Tasks é mais do que suficiente. Não precisa manter o
 O cumprimento deste contínuo processo de Backup pode ser a prática mais importante que garantirá o término do projeto com sucesso, evitando que você desista pelo caminho por causa de um acidente que o leve a jogar todo o trabalho no lixo.
 
 ## Salvar Ebook PDF
-###### [[voltar]](#Tutorial-Como-digitalizar-livros)
+###### [[voltar]](#tutorial-como-digitalizar-livros)
 
 \
 Após finalizar todas as Tasks e o livro estiver finalizado no app, chegou a etapa do salvamento do Ebook em PDF.
