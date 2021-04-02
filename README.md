@@ -91,11 +91,15 @@ Este tutorial abordará extensivamente um modo otimizado de praticar o processo 
 Sobre a velocidade da transformação de livro de papel em Ebook PDF.
 
 **Eficiência**
-- 400 páginas leva 7 horas de trabalho, se dividindo em:
-  - 2 horas para fotografar as 400 páginas;
-  - 5 horas para transformar as fotos em PDF pesquisável de altíssima qualidade.
+Para transformar um livro de 400 páginas em PDF pesquisável
+- Com Alta Qualidade: 3 horas de trabalho, se dividindo em:
+  - 2 horas, para tirar fotos
+  - 1 hora para formar o PDF
+- Com Extrema Qualidade: 7 horas de trabalho, se dividindo em:
+  - 2 horas, para tirar fotos
+  - 5 horas para formar o PDF
 
-Dependendo do nível de exigência de qualidade no processo de edição gráfica, ele poderá ser terminado em 30 minutos.
+> Nota: O modo de 'Alta Qualidade' mais acelerado, exige o cumprimento da abordagem `HardCrop` que será detalhada ao longo do tutorial.
 
 **Iluminação**\
 Uma fonte de iluminação extra é necessária para evitar que a sombra causada pelo celular ou uma baixa iluminação do ambiente cause distorção na imagem.
@@ -195,7 +199,7 @@ O app informado possibilita tirar fotos sempre que o seu celular 'escutar' um ru
 
 Em seguida, virar a página do livro e emitir novamente o sinal sonoro para o celular tirar mais uma foto.
 
-> Importante: Se tiver alguem no ambiente, avise do processo para não acharem que você perdeu o juízo em ficar falando 'pá-pá-pá' a cada 5 segundos. :p
+> Importante: Se tiver alguém no ambiente, avise do processo para não acharem que você perdeu o juízo em ficar falando 'pá-pá-pá' a cada 5 segundos. :p
 
 A grande vantagem deste método está em o celular respeitar as variações de velocidade na sua capacidade de virar as páginas. Assim haverá uma forte sincronia entre a frequência das fotografias disparadas e seus movimentos manuais. Sem disparo no momento errado e sem tempo perdido com espera.
 
@@ -289,12 +293,21 @@ Siga os passos:
 ##### Delimitação do tamanho da task
 ###### [[voltar]](#Tutorial-Como-digitalizar-livros)
 
-\
-Neste tutorial, será utilizado o volume de 1 task como sendo a finalização do tratamento de 40 páginas. 1 Task de 40 páginas exige por volta de 30 minutos para ser concluída.
+A velocidade de tratamento das páginas dependerá da abordagem utilizada, seja prezando por mais qualidade e estética, ou prezando por mais velocidade.
+
+**Extrema Qualidade x Extrema Velocidade**
+
+40 páginas x 30 minutos
+Se o objetivo for prezar pela melhor qualidade possível, é sugerido que o tamanho da Task seja de 40 páginas, que exige por volta de 30 minutos para ser concluída com a abordagem com foco extremo em qualidade.
+
+200 páginas x 30 minutos
+Se o objetivo for prezar por velocidade, é sugerido utilizar a abordagem do `HardCrop`, que será descrita mais adiante, com o tamanho da Task sendo de 200 páginas, que também exige por volta de 30 minutos para ser concluída, apesar de que sacrificando um pouco da estética.
+
+**Task de volume Par**
 
 É extremamente recomendado que o volume de páginas por task seja fixo e de número Par.
 
-Mas será apresentado os fatores envolvidos nesta tomada de decisão.
+Caso não tenha curiosidade de entender o motivo, salte para o tópico `Edição de Fotos`. Caso seja curioso, adiante terá uma detalhada explicação.
 
 Como as fotografias tiradas estão segmentadas em lote Ímpar e lote Par, o processo de importação também será segmentado nestes lotes.
 
@@ -327,6 +340,8 @@ Repare a ordem de importação necessária, não seria consistente entre as task
 	- lote Ímpar-página 27 até 49
 
 Com tasks de volume Ímpar, a falta de consistência no processo de importação aumenta o risco de erros de importação que geram retrabalhos para correção dos acidentes e perda de eficiência no processo.
+
+> Nota: Imagine a quantidade de acidentes e retrabalhos que o autor deste tutorial sofreu, bagunçando a ordem de 400 páginas e tendo que corrigir aposição individualmente, até o ponto em que entendeu a origem do risco e foi capaz de identificar essa boa prática. #rindo_de_nervoso :p
 
 #### Edição das fotos
 ###### [[voltar]](#Tutorial-Como-digitalizar-livros)
@@ -372,7 +387,9 @@ A4 - Resolução 220\
 Letter - Resolução 230\
 ![](img/letter_230.jpg)
 
-Tendo encontrado a resolução e formato ideal para o formato de seu livro, guarde bem essas informaçoes pois todas as Tasks deverão ser configuradas a partir desse número de resolução e formato de página, bem como o processo de salvamento do PDF será configurado a partir dessas informações.
+Tendo encontrado a resolução e formato ideal para o formato de seu livro, guarde bem essas informações pois todas as Tasks deverão ser configuradas a partir desse número de resolução e formato de página, bem como o processo de salvamento do PDF será configurado a partir dessas informações.
+
+Caso seu interesse seja prezar por mais velocidade à estética, leia o tópico "Acelerando 5x com HardCrop" antes de seguir o passo-a-passo abaixo.
 
 ###### Passo a Passo
 
@@ -384,13 +401,13 @@ Tendo encontrado a resolução e formato ideal para o formato de seu livro, guar
     	- Quanto melhor tiver sido o Enquadramento durante o processo de captura das fotos, menor será a nacessidade de ajuste com essa função.
     	- Altere a máscara de modo a ensinar para o app, como a página está atualmente posicionada através da representação de um retângulo distorcido.
     	- Dessa forma, é necessário simular na máscara retangular, a mesma distorção existente na página.
-    	- Dicas para simular a distorçao da páginas na máscara:
+    	- Dicas para simular a distorção da páginas na máscara:
         	- Verifique se a primeira linha horizontal que toca uma linha de texto, permanece perpendicular ao texto ao longo de toda a linha. Ajuste os vértices do retângulo para gerar esse enquadramento.
         	- Repita o passo acima para a última linha horizontal que toca uma linha de texto.
-        	- Verifique se a linha vertical mais próxima do parágrafo da esquerda possui a mesma distâncai de margem ao longo de todo o percurso. Ajuste os vértices do retângulo para gerar esse enquadramento.
+        	- Verifique se a linha vertical mais próxima do parágrafo da esquerda possui a mesma distância de margem ao longo de todo o percurso. Ajuste os vértices do retângulo para gerar esse enquadramento.
         	- Repita o passo acima para a linha vertical mais próxima do parágrafo da direita.
     	- Atentar para manter uma margem dos limites da máscara, confortavelmente maior que a necessária para fazer o Crop do formato do livro
-    	- Quanto estiver satisfeito com a posição da máscara, se certifique que todas as páginas do lote estão selecionadas e confirme clicando no botão `Correct`. Desta forma a imagem será alterada de modo que o retângulo distorcido (quadrilátero), se torne um retângulo de fato, com os 4 ângulos de 90 graus. Assim, estará simulado o efeito da perspectiva perfeita, similar aos Scanners profissionais.
+    	- Quanto estiver satisfeito com a posição da máscara, certifique-se que todas as páginas do lote estão selecionadas e confirme clicando no botão `Correct`. Desta forma a imagem será alterada de modo que o retângulo distorcido (quadrilátero), se torne um retângulo de fato, com os 4 ângulos de 90 graus. Assim, estará simulado o efeito da perspectiva perfeita, similar aos Scanners profissionais.
     	- Importante: Margem curta demais em relação a página, aumenta o risco de gerar um grave erro, impossibilitando cumprir a etapa de Crop.
 
 Topo\
@@ -425,6 +442,45 @@ Página inteira\
 	- Selecionar função `Erase`
 		- Manualmente limpar as margens das páginas, removendo qualquer sujeira visual, como o instrumento utilizado para pressionar as páginas ou sombras.
 		- Com a ferramenta, faça retângulos largos de modo que a maior área interna seja preenchida pelo fundo do livro. Se os retângulos forem pequenos e a maior parte de sua área interna for preenchida pela sujeira a ser removida, ao invés de remover a sujeira, ocasionará um efeito colateral, aparecendo um retângulo preto.
+
+**Mais detalhes-Acelerando 5x com HardCrop**
+
+É possível acelerar 5 vezes mais, este processo de edição às custas de um pouco de estética da página, de modo que o processo de edição salte de 40 páginas para 200 páginas em 30 minutos de trabalho.
+
+A diferença no processo está na etapa do Crop, onde fazemos um Crop mais agressivo (HardCrop), menor que o tamanho padrão da página, para reduzir o risco do aparecimento das sujeiras de borda, confiante de que no processo do salvamento, as páginas serão centralizadas e terão seu tamanho padronizado.
+
+Assim, a grande maioria das páginas não precisarão mais de aplicação da ferramenta `Erase` para apagar as sujeira visuais nas bordas, reduzindo drasticamente o tempo total de trabalho.
+
+A desvantagem estética desse processo acelerado consiste em o PDF ficar com ausência de fundo no entorno do conteúdo escrito. Essa ausência de fundo se mistura bem ao fundo branco da página, mas caso o leitor de PDF aplique a função de substituição de cores, essa ausência de fundo se torna gritante.
+
+Por este processo ser 5 vezes mais acelerado, naturalmente o tamanho da Task pode ser de 200 páginas ao invés das 40 sugeridas, para manter o tempo estimado de trabalho por Task de 30 minutos.
+
+Como aplicar o HardCrop
+- No passo-a-passo anterior, após a aplicar função `Straighten Text Lines`
+- Selecionar função: `Crop`
+  - Ajustar a margem do Crop para o menor tamanho possível sem que a margem toque no conteúdo da página.
+  - Navegar pelas páginas do lote e ampliar alguma margem sempre que notar que ela tocou no conteúdo de alguma página, de modo a garantir que o tamanho da máscara de corte seja o menor possível ao passo que não interfere no conteúdo de todas as páginas do lote.
+- Aplicar a função `Crop`
+- Nota: Por o processo de captura das fotos do Lote ter sido realizado com suporte fixo da câmera, a variação da posição do conteúdo das páginas será bem pequena, mas existente. Caso o processo de captura das fotos tivesse sido realizado 'à mão livre', essa aceleração por HardCrop seria impraticável.
+- Continue o processo padrão descrito anteriormente. Segue um pequeno resumo:
+  - Verificar se há algum problema visual nas páginas. Caso note alguma página que teve seu conteúdo cortado pela borda, refaça o processo de HardCrop com as margens um pouco mais amplas.
+  - Repetir todo o processo para o Lote Par
+  - Aplicar a função de `White Background` à ambos lotes
+  - Revisar todas as páginas com a ferramenta `Erase` apagando qualquer sujeira visual
+
+Máscara de Corte no HardCrop\
+![](img/hardcrop_3.jpg)
+
+**Efeito colateral do HardCrop visualizado pelo Adobe Acrobat Reader**
+
+Sem substituição de cores\
+![](img/hardcrop_1.jpg)
+
+Ajustando substituição de cores
+![](img/adobereader_acessibilidade.jpg)
+
+Após substituição de cores\
+![](img/hardcrop_2.jpg)
 
 #### Recuperar a ordem natural das páginas
 ###### [[voltar]](#Tutorial-Como-digitalizar-livros)
