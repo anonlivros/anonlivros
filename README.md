@@ -1,5 +1,6 @@
 ## Tutorial-Como digitalizar livros
-Autor: [t.me/anonlivros](https://t.me/anonlivros)
+Autor: [t.me/anonlivros](https://t.me/anonlivros)\
+Versão: 100
 
 ### Menu de Navegação
 1-[Introdução](#introdução)
