@@ -372,7 +372,7 @@ A4 - Resolução 220\
 Letter - Resolução 230\
 ![](img/letter_230.jpg)
 
-Tendo encontrado a resolução ideal para o formato de seu livro, guarde bem seu número pois todas as Tasks deverão ser configuradas a partir desse número de resolução.
+Tendo encontrado a resolução e formato ideal para o formato de seu livro, guarde bem essas informaçoes pois todas as Tasks deverão ser configuradas a partir desse número de resolução e formato de página, bem como o processo de salvamento do PDF será configurado a partir dessas informações.
 
 ###### Passo a Passo
 
@@ -498,8 +498,7 @@ Siga os passos:
 - Em `Image quality`, selecione `Best quality`
 - Marque `Create PDF/UA (requires OCR)`
 - Clique em `Use one paper size for all page images:`
-	- Na caixa de seleção que será habilitada, selecione `Custom...`
-	- Janela que abrirá, nos campos em `Paper size`, define a largura e altura em milímetros que foi definida na etapa do Crop. Confirme clicando em `Ok`.
+    - Na caixa de seleção que será habilitada, selecione o formato da página determinado na etapa `Definindo a resolução`
 - Marque `Use MRC compression (requires OCR)`
 - Marque `Apply ABBYY PreciseScan to smooth characters on page images`
 - Em `Searchable PDF settings`, marque `Text under the page image`
