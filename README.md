@@ -27,35 +27,41 @@ Versão: 101
 
 4.2.1-[Minimizar distorção das páginas](#minimizar-distorção-das-páginas)
 
-5-[Tratamento das fotos](#tratamento-das-fotos)
+5 - Windows
 
-5.1-[Modo em lotes de páginas contínuas](#modo-em-lotes-de-páginas-contínuas)
+5.1-[Tratamento das fotos](#tratamento-das-fotos)
 
-5.2-[Modo em lotes separados em Par / Ímpar (duplex scanning)](#modo-em-lotes-separados-em-par--%c3%admpar-duplex-scanning)
+5.2-[Modo em lotes de páginas contínuas](#modo-em-lotes-de-páginas-contínuas)
 
-5.2.1-[Corrigir rotação do lote de páginas Ímpar e Par com software externo](#corrigir-rotação-do-lote-de-páginas-ímpar-e-par-com-software-externo)
+5.3-[Modo em lotes separados em Par / Ímpar (duplex scanning)](#modo-em-lotes-separados-em-par--%c3%admpar-duplex-scanning)
 
-5.3-[Edição final](#edição-final)
+5.3.1-[Corrigir rotação do lote de páginas Ímpar e Par com software externo](#corrigir-rotação-do-lote-de-páginas-ímpar-e-par-com-software-externo)
 
-5.3.1-[Tutorial em vídeo](#tutorial-em-vídeo)
+5.4-[Edição final](#edição-final)
 
-5.3.2-[Download-Software Profissional](#download-software-profissional)
+5.4.1-[Tutorial em vídeo](#tutorial-em-vídeo)
 
-5.3.3-[Importação](#importação)
+5.4.2-[Download-Software Profissional](#download-software-profissional)
 
-5.3.3.1-[Delimitação do tamanho da task](#delimitação-do-tamanho-da-task)
+5.4.3-[Importação](#importação)
 
-5.3.4-[Edição das fotos](#edição-das-fotos)
+5.4.3.1-[Delimitação do tamanho da task](#delimitação-do-tamanho-da-task)
 
-5.3.5-[Definindo a resolução](#definindo-a-resolu%c3%a7%c3%a3o)
+5.4.4-[Edição das fotos](#edição-das-fotos)
 
-5.3.6-[Recuperar a ordem natural das páginas](#recuperar-a-ordem-natural-das-páginas)
+5.4.5-[Definindo a resolução](#definindo-a-resolu%c3%a7%c3%a3o)
 
-5.3.7-[Ativar função de pesquisa (OCR)](#ativar-fun%c3%a7%c3%a3o-de-pesquisa-ocr)
+5.4.6-[Recuperar a ordem natural das páginas](#recuperar-a-ordem-natural-das-páginas)
 
-5.3.8-[Backup, Repetição e Sucesso](#backup-repeti%c3%a7%c3%a3o-e-sucesso)
+5.4.7-[Ativar função de pesquisa (OCR)](#ativar-fun%c3%a7%c3%a3o-de-pesquisa-ocr)
 
-6-[Salvar Ebook PDF](#salvar-ebook-pdf)
+5.4.8-[Backup, e Sucesso](#backup-repeti%c3%a7%c3%a3o-e-sucesso)
+
+5.5-[Salvar Ebook PDF](#salvar-ebook-pdf)
+
+6-[Ubuntu](#ubuntu)
+
+7-[Considerações finais](#considerações-finais)
 
 ### Introdução
 ###### [[voltar]](#tutorial-como-digitalizar-livros)
@@ -299,7 +305,11 @@ Siga os passos:
 	- Hashi de sushi, baqueta de bateria, régua, garfo/colher (apoiando no livro com o cabo), cabo fino de pentes/escovas longas, etc...
 	- Uma abordagem não recomendada seria estabilizar as páginas com os próprios dedos pressionando na margem. Mas dessa forma, aumenta a chance de gerar piores resultados durante o processamento automático de correção de distorções.
 
-## Tratamento das fotos
+## Windows
+###### [[voltar]](#tutorial-como-digitalizar-livros)
+
+
+### Tratamento das fotos
 ### Modo em lotes de páginas contínuas
 ###### [[voltar]](#tutorial-como-digitalizar-livros)
 
@@ -319,6 +329,7 @@ A Eficiência Estimada do processo de edição proposto é de aproximadamente 15
 
 #### Corrigir rotação do lote de páginas Ímpar e Par com software externo
 [ em construção ]
+
 
 ### Edição final
 ###### [[voltar]](#tutorial-como-digitalizar-livros)
@@ -675,6 +686,146 @@ Após substituição de cores\
 - Por que a mudança de resolução é aplicada apenas ao final?
 - Por que `Remove Geometrical Distortion` não é aplicado à todas as páginas?
 - Por que não usar `Preprocessing`?
+
+## Ubuntu 
+###### [[voltar]](#tutorial-como-digitalizar-livros)
+
+
+Usa softwares livres e/ou código aberto.
+
+Todos os comandos foram feitos em uma máquina com `Ubuntu 20.04.1` , com os softwarese bibliotecas `Imagemagick`, `pdftk`, `img2pdf`, `libjpeg-turbo-progs`, `simple-scan`, `gscan2pdf` instalados. Todos estão disponíveis nos repositórios oficiais do Ubuntu.
+
+[Instalar](#scantailor) o `scantailor-advanced` por meio do `snap`.
+
+**Certifique-se que já estão instalados em seu computador.**
+
+## Organização prévia
+
+Crie duas pastas, uma chamada `par` e outra chamada `impar` para organizar as fotos que foram tiradas das páginas.
+
+### Rotação
+
+Se seguir o tutorial de Duplex então as páginas pares estarão de *ponta-cabeça*. Para resolver esse problema execute o comando a seguir dentro da pasta das pares:
+`for file in *.jpg; do convert $file -rotate 180 $file; done`
+
+### Renomeando os aqruivos
+
+Precisamos renomear os arquivos para que fique mais fácil organizar as páginas do pdf final.
+Os comandos a seguir renomearão as imagens para que possamos mesclá-las depois. É importante tomar cuidado no momento em que as fotos estã sendo tiradas para que não sejam puladas páginas, **nem as que estão em branco**. Esse pequeno detalhe faz uma grande diferença.
+
+Considerando os critérios satisfeitos execute em uma janela de terminal:
+
+- Dentro da pasta com páginas **ímpares** :
+    `counter=-1; for file in *.jpg; do mv -i "$file" $((counter+2)).jpg && ((counter+=2)); done`
+    
+- Dentro da pasta com páginas **pares** :
+    `counter=0; for file in *.jpg; do mv -i "$file" $((counter+2)).jpg && ((counter+=2)); done`
+    
+
+Em seguida já é possível mesclar as imagens e manter a ordem das páginas, por exemplo `/Livrofotos`.
+
+**Dica**: Mantenha uma cópia das imagens dentro das pastas `pares` e `impares` pois caso perceba que deu alguma coisa errada elas servirão de backup.
+
+[Fonte para o código original](https://www.reddit.com/r/bash/comments/4qyz88/renaming_files_to_numbers_both_odd_and_even/)
+
+## Aumentando o contraste e deixando com fundo branco
+
+### Scantailor
+
+O Scantailor é um software dedicado ao tratamento de fotos e scans de livros para que fiquem com a melhor configuração possível para uma leitura agradável e fluída. O programa conta com algumas etapas automáticas de ajustes de seleção de páginas, rotação, seleção de conteúdo, margens e uma pós produção contando com seleção de imagens, limpeza de impurezas e ajuste de páginas tortas devido a angulação, efeito da brochura ou dobras nas páginas. Se precisar fazer algum ajuste manual ou mais fino esse software também dá conta.
+
+**O Scantailor não monta o pdf e nem faz OCR.**
+
+Nas redes existem vários tutoriais, em várias línguas, ensinando a usar esse software.
+
+Exemplos:
+
+- Manual de utilização (em inglês): [\[Aqui\]](https://github.com/scantailor/scantailor/wiki/User-Guide#installation-and-first-start)
+- Vídeo demonstrativo: [\[Vimeo\]](https://vimeo.com/12524529)
+
+### Via Terminal
+
+Crie uma pasta `tratadas` dentro da mesma pasta `/Livrofotos` em que estariam (segundo o exemplo) todas as imagens em ordem.
+
+Entre na pasta em que estão as imagens pelo terminal e execute o comando a seguir:
+
+`for file in *.jpg; do convert $file -colorspace gray \( +clone -blur 15,15 \) -compose Divide_Src -composite -normalize -threshold 80% tratadas/`basename $file`; done`
+
+O processo ocorrerá em silêncio se estiver tudo bem. Se houver algum erro ele será interrompido ou mensagens aparecerão na tela.
+
+Observações:
+
+1.  Um efeito negativo desse método é que as imagens, principalmente as fotos, vão sofrer com esse contraste e ficar praticamente irreconhecíveis.
+2.  A linha `for file in *.jpg` pode ser alterada para tratar qualquer formato de imagem em que tenham sito tiradas as fotos. Pra isso basta alterar a extensão `.jpg` para `.png`, `.bmp` ou qualquer outro formato.
+
+Ver também:
+[Fonte para o código original](https://superuser.com/questions/693339/batch-processing-images-of-documents-to-look-like-a-fax)
+
+[Aumentar contraste](https://superuser.com/questions/622950/is-there-a-way-to-increase-the-contrast-of-a-pdf-that-was-created-by-scanning-a)
+
+### Recortando as imagens
+
+Nesse caso, o corte teria de ser feito uma a uma. Isso é possível usando o `Shotwell`.
+É possível também importar essas imagens para o `Scantailor` e fazer o corte por ele usando a seleção de conteúdo. A vantagem é a automatização e as imagens estarem mais leves devido a remoção de outras cores por meio dos comandos das etapas anteriores.
+
+## Montando o PDF
+
+Existem vários tutoriais de criação de pdfs a partir de imagens usando o Ubuntu. Tanto por linha de comando como por interface gráfica. Se a quantidade de páginas for muito grande é recomendado a linha de comando ao invés da interface gráfica.
+
+Particularmente o `img2pdf` faz a junção de imagens para um arquivo pdf mantendo a qualidade ou perdendo muito pouco, o que é importantíssimo para ter menos problemas com OCR.
+
+Dentro da pasta com as imagens tratadas, cortadas e prontas para fazer OCR execute:
+
+- `img2pdf --output faltafazerOCR.pdf $(ls *.tif|sort -n)`
+
+Um arquivo chamado `faltafazerOCR.pdf` será gerado.
+
+Observações:
+
+1.  `sort -n` é um parâmetro do comando `ls` para organizar as páginas pelos nomes dos arquivos das imagens.
+2.  `*.tif` por ser substituído por outros formatos de imagem que esteja usando como `.jpg`, `.png`, etc.
+
+Veja também:
+[Usando `img2pdf` em sequência](https://stackoverflow.com/questions/44215252/img2pdf-how-to-give-file-range)
+[Parâmetros do comando `ls`](https://www.linuxcommands.site/linux-file-and-directory-commands/linux-ls-sort/)
+
+## Finalizando: OCR
+
+Instalado o `tesseract-ocr`, inclusive com a biblioteca da língua portuguesa `tesseratc-ocr-por`, também existem várias maneiras, gráficas ou por linha de comando, para a realizar OCR e embutir no pdf. As duas mais comuns estão listadas.
+
+### OCRMYPDF
+
+Após instalado basta executar o comando a seguir utilizando como referência o pdf gerado no passo anterior.
+
+`ocrmypdf faltafazerOCR.pdf livrofinalizado.pdf`
+
+Será gerado o arquivo final `livrofinalizado.pdf`.
+
+### gscan2pdf
+
+Interface gráfica bem amigável para o `tesseract-ocr`. Muito intuitivo mas pode demorar um pouco pra criar o pdf e OCR.
+
+[site oficial](https://ocrmypdf.readthedocs.io/en/latest/introduction.html)
+
+## Extras
+
+### Convertendo para .djvu
+
+`pdf2djvu`
+
+### Caso tenha uma impressora com Scanner
+
+Se tiver uma impressora com scanner o `simple-scan`, que está presente numa instalação completa do Ubuntu, tem um modo de scan contínuo com timer semelhante ao aplicativo de Android usado pra tirar fotos automaticamente a cada 'x' segundos. 
+
+Felizmente existe a opção de escanear como se fosse documento o que reduz o tamanho dos arquivos e aumenta o contraste das imagens facilitando o tratamento delas.
+
+Atente-se ao DPI que por padrão vem em 150, o que é muito baixo.
+
+## Usando o GIMP
+
+Caso queira dar um tratamento personalizado ou alguma foto exija mais refinamento recomenda-se usar o GIMP. Ver exemplo [aqui](https://askubuntu.com/questions/638382/how-can-i-turn-photos-of-paper-documents-into-a-scanned-document).
+
+
 
 ### Considerações Finais
 
